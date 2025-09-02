@@ -70,3 +70,9 @@ class Solution:
                 return select(pivot_index + 1, right, k_smallest)
 
         return select(0, len(nums) - 1, k - 1)
+
+### 피드백
+    1. pivot을 고를 때 random.randint를 사용하여 랜덤하게 선정한다.
+    2. partitioning을 할 때 피벗을 right로 옮기고, 원하는 정렬 방식에 따라 스와핑하는 방법을 이용한다.
+    3. 0-based일 때 k번째로 값을 고르려면, pivot을 k - 1과 비교해야 한다.
+###
